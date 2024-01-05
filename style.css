@@ -23,3 +23,8 @@ table, th, td
     border: 0px solid black;
     padding: 5px;
 }
+
+#btn-10:focus
+{
+    color: red;
+}
