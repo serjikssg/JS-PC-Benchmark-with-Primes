@@ -2,13 +2,12 @@ tst = new Array();
 
 function test() {
     t = tst.length;
+    const n = 1_000_000;
     
     if(t === 11) {
         document.getElementById("btn-10").disabled = true;
     }
     
-    document.getElementById(`tst-btn-${t}`).innerText=(`...`);   
-    const n = 1_000_000;
     var start = Date.now();
     console.log(`\nJS: Counting ${countPrime(n)} Prime numbers`);
     var end = Date.now() - start;
@@ -28,6 +27,7 @@ function test() {
     console.log("sum: ",avr, "ave: ", avr / tst.length );
 
     document.getElementById("time10").innerText=(`${(avr / (tst.length) ).toFixed(3)} Seconds`);
+    document.getElementById("tst-btn-11").focus();
 }
 
 
